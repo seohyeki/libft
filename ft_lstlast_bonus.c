@@ -6,7 +6,7 @@
 /*   By: seohyeki <seohyeki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 15:30:11 by seohyeki          #+#    #+#             */
-/*   Updated: 2023/10/31 14:32:27 by seohyeki         ###   ########.fr       */
+/*   Updated: 2023/11/06 15:10:36 by seohyeki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	if (lst != 0)
+	if (lst)
 	{
 		while (lst->next != 0)
 			lst = lst->next;

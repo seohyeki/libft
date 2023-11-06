@@ -6,7 +6,7 @@
 /*   By: seohyeki <seohyeki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 18:15:07 by seohyeki          #+#    #+#             */
-/*   Updated: 2023/10/25 13:05:52 by seohyeki         ###   ########.fr       */
+/*   Updated: 2023/11/06 14:25:49 by seohyeki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	write(fd, s, ft_strlen(s));
 }

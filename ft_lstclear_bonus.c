@@ -6,7 +6,7 @@
 /*   By: seohyeki <seohyeki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 16:16:15 by seohyeki          #+#    #+#             */
-/*   Updated: 2023/10/31 14:32:17 by seohyeki         ###   ########.fr       */
+/*   Updated: 2023/11/06 17:32:57 by seohyeki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*tmp;
 
-	if (!lst || !del)
-		return ;
 	while (*lst != 0)
 	{
 		tmp = *lst;

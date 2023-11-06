@@ -6,7 +6,7 @@
 /*   By: seohyeki <seohyeki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 16:42:12 by seohyeki          #+#    #+#             */
-/*   Updated: 2023/10/31 14:32:22 by seohyeki         ###   ########.fr       */
+/*   Updated: 2023/11/06 15:48:04 by seohyeki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (!f)
-		return ;
-	while (lst != 0)
+	while (lst)
 	{
 		f(lst->content);
 		lst = lst->next;

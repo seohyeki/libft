@@ -6,7 +6,7 @@
 /*   By: seohyeki <seohyeki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 17:47:47 by seohyeki          #+#    #+#             */
-/*   Updated: 2023/10/31 14:33:12 by seohyeki         ###   ########.fr       */
+/*   Updated: 2023/11/06 14:17:38 by seohyeki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int	i;
 	char			*new_str;
 
-	if (!f)
-		return (NULL);
 	i = 0;
 	new_str = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (new_str == NULL)

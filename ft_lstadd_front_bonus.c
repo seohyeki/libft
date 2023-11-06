@@ -6,7 +6,7 @@
 /*   By: seohyeki <seohyeki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 14:54:43 by seohyeki          #+#    #+#             */
-/*   Updated: 2023/10/31 14:32:09 by seohyeki         ###   ########.fr       */
+/*   Updated: 2023/11/06 17:04:29 by seohyeki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (!lst || !new)
+	if (!new)
 		return ;
 	new->next = *lst;
 	*lst = new;
