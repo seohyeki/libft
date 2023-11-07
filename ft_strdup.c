@@ -6,7 +6,7 @@
 /*   By: seohyeki <seohyeki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 14:25:24 by seohyeki          #+#    #+#             */
-/*   Updated: 2023/10/31 14:33:01 by seohyeki         ###   ########.fr       */
+/*   Updated: 2023/11/07 16:28:39 by seohyeki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strdup(const char *s1)
 {
-	int		i;
+	size_t	i;
 	char	*dest;
 
 	i = 0;

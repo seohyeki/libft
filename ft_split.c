@@ -6,7 +6,7 @@
 /*   By: seohyeki <seohyeki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 16:22:55 by seohyeki          #+#    #+#             */
-/*   Updated: 2023/10/31 14:32:56 by seohyeki         ###   ########.fr       */
+/*   Updated: 2023/11/07 16:34:24 by seohyeki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static int	ft_count_word(char const *str, char sep)
 {
-	int	count;
-	int	i;
+	int		count;
+	size_t	i;
 
 	count = 0;
 	i = 0;
@@ -41,7 +41,7 @@ static int	ft_count_word(char const *str, char sep)
 
 static char	*ft_dup(char const *str, char sep)
 {
-	int		i;
+	size_t		i;
 	int		str_len;
 	char	*dest;
 
