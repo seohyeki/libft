@@ -6,7 +6,7 @@
 /*   By: seohyeki <seohyeki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 16:48:15 by seohyeki          #+#    #+#             */
-/*   Updated: 2023/11/06 15:11:57 by seohyeki         ###   ########.fr       */
+/*   Updated: 2023/11/07 10:22:15 by seohyeki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*tmp;
 	void	*content;
 
-	new_lst = 0;
+	if (!lst || !f || !del)
+		return (NULL);
+	new_lst = NULL;
 	while (lst)
 	{
 		content = f(lst->content);

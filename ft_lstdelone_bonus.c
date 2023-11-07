@@ -6,7 +6,7 @@
 /*   By: seohyeki <seohyeki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 15:58:49 by seohyeki          #+#    #+#             */
-/*   Updated: 2023/11/06 17:33:03 by seohyeki         ###   ########.fr       */
+/*   Updated: 2023/11/07 10:22:05 by seohyeki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
+	if (!lst || !del)
+		return ;
 	del(lst->content);
 	free(lst);
 }
