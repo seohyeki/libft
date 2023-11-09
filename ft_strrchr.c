@@ -6,7 +6,7 @@
 /*   By: seohyeki <seohyeki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 19:38:06 by seohyeki          #+#    #+#             */
-/*   Updated: 2023/11/07 16:36:05 by seohyeki         ###   ########.fr       */
+/*   Updated: 2023/11/09 19:51:14 by seohyeki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,17 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t	i;
+	char	*last;
 
-	i = 0;
+	last = NULL;
 	while (*s != '\0')
 	{
-		s++;
-		i++;
-	}
-	while (i >= 0)
-	{
 		if (*s == (char)c)
-			return ((char *)s);
-		s--;
-		i--;
+			last = (char *)s;
+		s++;
 	}
-	return (NULL);
+	if ((char)c == '\0')
+		return ((char *)s);
+	else
+		return (last);
 }
